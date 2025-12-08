@@ -1,1 +1,1 @@
-<README CONTENT>
+# TechFix Community — Website (v4)\n\nProject structure placeholder. The full version is described in the chat.

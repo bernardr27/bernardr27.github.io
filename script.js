@@ -1,1 +1,1 @@
-<JS CONTENT>
+/* Main JS entry (module) is included in your project zip. */
