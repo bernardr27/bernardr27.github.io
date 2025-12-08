@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechFix Community | Tech Repair & Web Builds</title>
     <meta name="description" content="TechFix Community - device repair, web & app builds, and branding with an urban-tech aesthetic." />
+    <!-- Favicon: replace favicon.svg with your own logo file when you have it -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="theme-dark">
     <header class="site-header">
         <nav class="nav">
             <div class="logo">
-                <span class="logo-main">TechFix</span>
-                <span class="logo-sub">Community</span>
+                <!-- If you later create a logo image, uncomment this and point src to /assets/logo.svg -->
+                <!-- <img src="assets/logo.svg" alt="TechFix Community logo" class="logo-img" /> -->
+                <div class="logo-text">
+                    <span class="logo-main">TechFix</span>
+                    <span class="logo-sub">Community</span>
+                </div>
             </div>
+            <button class="theme-toggle" aria-label="Toggle light/dark theme">
+                <span class="theme-icon moon">☾</span>
+                <span class="theme-icon sun">☼</span>
+            </button>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
             </button>
@@ -47,6 +57,14 @@
                 </div>
             </div>
             <div class="hero-panel reveal">
+                <div class="hero-image-wrapper">
+                    <!-- Replace this placeholder gradient with a real image later -->
+                    <div class="hero-device-mock">
+                        <div class="hero-device-screen">
+                            <span class="hero-device-text">TechFix UI</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="metric-card">
                     <p class="metric-label">Devices Repaired</p>
                     <p class="metric-value">100+ <span>and counting</span></p>
@@ -110,7 +128,7 @@
             </div>
         </section>
 
-        <!-- Portfolio -->
+        <!-- Portfolio with image slots -->
         <section id="portfolio" class="section">
             <div class="section-header reveal">
                 <h2>Sample Work</h2>
@@ -118,16 +136,28 @@
             </div>
             <div class="portfolio-grid">
                 <article class="portfolio-item reveal">
+                    <div class="portfolio-thumb">
+                        <!-- Replace with assets/landing-page.jpg later -->
+                        <div class="img-placeholder">Landing Page Preview</div>
+                    </div>
                     <div class="portfolio-tag">Web Design</div>
                     <h3>Small Business Landing Page</h3>
                     <p>Clean one-page layout with service highlights, testimonials, and contact form.</p>
                 </article>
                 <article class="portfolio-item reveal">
+                    <div class="portfolio-thumb">
+                        <!-- Replace with assets/device-checkin.jpg later -->
+                        <div class="img-placeholder">Repair Flow UI</div>
+                    </div>
                     <div class="portfolio-tag">Repair Flow</div>
                     <h3>Device Check-In Concept</h3>
                     <p>Online device intake form and status page for local repair shop customers.</p>
                 </article>
                 <article class="portfolio-item reveal">
+                    <div class="portfolio-thumb">
+                        <!-- Replace with assets/logo-grid.jpg later -->
+                        <div class="img-placeholder">Logo Grid</div>
+                    </div>
                     <div class="portfolio-tag">Branding</div>
                     <h3>Tech Repair Logo Concepts</h3>
                     <p>Urban + tech style logos designed for repair/freelance brands.</p>
