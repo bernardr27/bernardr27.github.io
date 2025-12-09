@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechFix Community | Premium Tech Solutions</title>
+    <meta name="description" content="Houston's premier tech repair and digital solutions provider. Expert device repair, modern web development, and professional branding." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="theme-dark">
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Background System -->
+    <div class="bg-container" id="bgContainer">
+        <div class="bg-gradient"></div>
+        <canvas id="particleCanvas"></canvas>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav glass-strong" id="nav">
+        <div class="nav-brand">
+            <a href="#hero" class="brand">
+                <div class="brand-icon">
+                    <span class="icon-bolt">⚡</span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">TechFix</span>
+                    <span class="brand-tagline">Community</span>
+                </div>
+            </a>
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+            <li><a href="#process" class="nav-link" data-section="process">Process</a></li>
+            <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+            <li><a href="#pricing" class="nav-link" data-section="pricing">Pricing</a></li>
+            <li><a href="#testimonials" class="nav-link" data-section="testimonials">Reviews</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon" id="themeIcon">🌙</span>
+            </button>
+            <a href="#contact" class="btn btn-primary">Book Now</a>
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="status-dot"></span>
+                <span>Houston's Premier Tech Solutions</span>
+            </div>
+            
+            <h1 class="hero-title reveal">
+                Transform Your <span class="gradient-text">Digital Future</span>
+            </h1>
+            
+            <p class="hero-subtitle reveal">
+                Expert device repair, cutting-edge web development, and stunning brand design. 
+                We bring your tech vision to life with precision, creativity, and style.
+            </p>
+            
+            <div class="hero-actions reveal">
+                <a href="#contact" class="btn btn-primary btn-large">
+                    <span>Start Your Project</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#portfolio" class="btn btn-ghost btn-large">
+                    <span>View Portfolio</span>
+                </a>
+            </div>
+
+            <div class="hero-stats reveal">
+                <div class="stat-card glass">
+                    <div class="stat-icon">🔧</div>
+                    <div class="stat-info">
+                        <div class="stat-value counter" data-target="500">0</div>
+                        <div class="stat-label">Repairs Completed</div>
+                    </div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon">💻</div>
+                    <div class="stat-info">
+                        <div class="stat-value counter" data-target="150">0</div>
+                        <div class="stat-label">Sites Launched</div>
+                    </div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-info">
+                        <div class="stat-value">4.9<span>/5</span></div>
+                        <div class="stat-label">Client Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="floating-card glass">
+                <div class="card-header">
+                    <div class="status-indicator">
+                        <span class="dot pulse"></span>
+                        <span>Live Status</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="service-status">
+                        <span>Device Repairs</span>
+                        <span class="badge badge-success">Available</span>
+                    </div>
+                    <div class="service-status">
+                        <span>Web Projects</span>
+                        <span class="badge badge-warning">2 Slots Left</span>
+                    </div>
+                    <div class="service-status">
+                        <span>Brand Design</span>
+                        <span class="badge badge-info">Booking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="section-header reveal">
+            <span class="section-badge">What We Offer</span>
+            <h2>Comprehensive Tech Solutions</h2>
+            <p>From repairs to web builds, we've got all your tech needs covered</p>
+        </div>
+
+        <div class="services-grid">
+            <article class="service-card glass reveal">
+                <div class="service-header">
+                    <div class="service-icon">🔧</div>
+                    <h3>Device Repair</h3>
+                </div>
+                <p class="service-description">
+                    Professional repair services for phones, tablets, laptops, and gaming consoles. 
+                    Fast turnaround with quality parts and lifetime warranty.
+                </p>
+                <ul class="service-features">
+                    <li>Screen & Battery Replacement</li>
+                    <li>Water Damage Recovery</li>
+                    <li>Performance Optimization</li>
+                    <li>Console & PC Repair</li>
+                    <li>Data Recovery Services</li>
+                </ul>
+                <a href="#contact" class="service-link">
+                    <span>Learn More</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </article>
+
+            <article class="service-card glass reveal featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="service-header">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                </div>
+                <p class="service-description">
+                    Modern, responsive websites built with cutting-edge technologies. 
+                    From landing pages to full e-commerce solutions.
+                </p>
+                <ul class="service-features">
+                    <li>Custom Website Design</li>
+                    <li>E-commerce Platforms</li>
+                    <li>Progressive Web Apps</li>
+                    <li>SEO Optimization</li>
+                    <li>Ongoing Maintenance</li>
+                </ul>
+                <a href="#contact" class="service-link">
+                    <span>Learn More</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </article>
+
+            <article class="service-card glass reveal">
+                <div class="service-header">
+                    <div class="service-icon">🎨</div>
+                    <h3>Brand Design</h3>
+                </div>
+                <p class="service-description">
+                    Create a memorable brand identity that stands out. Complete packages 
+                    from logo design to full brand guidelines.
+                </p>
+                <ul class="service-features">
+                    <li>Logo & Icon Design</li>
+                    <li>Brand Identity Systems</li>
+                    <li>Social Media Graphics</li>
+                    <li>Marketing Materials</li>
+                    <li>Style Guide Creation</li>
+                </ul>
+                <a href="#contact" class="service-link">
+                    <span>Learn More</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section section-alt" id="process">
+        <div class="section-header reveal">
+            <span class="section-badge">Our Approach</span>
+            <h2>How We Work</h2>
+            <p>A streamlined process designed for your convenience</p>
+        </div>
+
+        <div class="process-timeline">
+            <div class="process-step glass reveal">
+                <div class="step-number">01</div>
+                <div class="step-icon">📋</div>
+                <h3>Consultation</h3>
+                <p>Share your needs and goals. We'll discuss the best solution for your situation.</p>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step glass reveal">
+                <div class="step-number">02</div>
+                <div class="step-icon">💡</div>
+                <h3>Planning</h3>
+                <p>We create a detailed plan with timeline, pricing, and deliverables tailored to you.</p>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step glass reveal">
+                <div class="step-number">03</div>
+                <div class="step-icon">⚙️</div>
+                <h3>Execution</h3>
+                <p>Our team gets to work, keeping you updated every step of the way.</p>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step glass reveal">
+                <div class="step-number">04</div>
+                <div class="step-icon">🚀</div>
+                <h3>Delivery</h3>
+                <p>Receive your repaired device or launched project with ongoing support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="section-header reveal">
+            <span class="section-badge">Our Work</span>
+            <h2>Featured Projects</h2>
+            <p>Showcasing our latest work and creative solutions</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <article class="portfolio-item glass reveal">
+                <div class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                    <div class="portfolio-placeholder">🌐</div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">Web Design</span>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Modern online store with seamless checkout and inventory management system.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item glass reveal">
+                <div class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                    <div class="portfolio-placeholder">📱</div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">Mobile App</span>
+                    <h3>Service Booking App</h3>
+                    <p>Intuitive mobile app for scheduling repairs and tracking device status in real-time.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item glass reveal">
+                <div class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                    <div class="portfolio-placeholder">🎯</div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">Branding</span>
+                    <h3>Tech Startup Identity</h3>
+                    <p>Complete brand package including logo, colors, typography, and marketing materials.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Logo Design</span>
+                        <span class="tag">Guidelines</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item glass reveal">
+                <div class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                    <div class="portfolio-placeholder">🏢</div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">Web Design</span>
+                    <h3>Corporate Website</h3>
+                    <p>Professional corporate site with CMS integration and multi-language support.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">SEO</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item glass reveal">
+                <div class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                    <div class="portfolio-placeholder">🎨</div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">UI/UX Design</span>
+                    <h3>Dashboard Interface</h3>
+                    <p>Clean analytics dashboard with real-time data visualization and reporting features.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Charts</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item glass reveal">
+                <div class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                    <div class="portfolio-placeholder">🎮</div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">Gaming</span>
+                    <h3>Console Repair Service</h3>
+                    <p>PS5 and Xbox Series X repairs with custom cooling solutions and performance upgrades.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Hardware</span>
+                        <span class="tag">Gaming</span>
+                        <span class="tag">Custom</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section-alt" id="pricing">
+        <div class="section-header reveal">
+            <span class="section-badge">Pricing</span>
+            <h2>Transparent Pricing</h2>
+            <p>Choose the package that fits your needs and budget</p>
+        </div>
+
+        <div class="pricing-toggle reveal">
+            <button class="toggle-btn active" data-pricing="project">Per Project</button>
+            <button class="toggle-btn" data-pricing="monthly">Monthly Plans</button>
+        </div>
+
+        <div class="pricing-grid" id="pricingGrid">
+            <article class="pricing-card glass reveal">
+                <h3>Starter</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">250</span>
+                    <span class="period">/project</span>
+                </div>
+                <p class="pricing-description">Perfect for small projects and basic websites</p>
+                <ul class="pricing-features">
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>3-Page Website</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile Responsive</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Contact Form</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>2 Revisions</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>7-Day Delivery</li>
+                </ul>
+                <a href="#contact" class="btn btn-ghost btn-block">Get Started</a>
+            </article>
+
+            <article class="pricing-card glass reveal featured">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Professional</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">750</span>
+                    <span class="period">/project</span>
+                </div>
+                <p class="pricing-description">Ideal for businesses needing advanced features</p>
+                <ul class="pricing-features">
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>10-Page Website</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced Features</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SEO Optimization</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>CMS Integration</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>5 Revisions</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>14-Day Delivery</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+            </article>
+
+            <article class="pricing-card glass reveal">
+                <h3>Enterprise</h3>
+                <div class="price">
+                    <span class="amount">Custom</span>
+                </div>
+                <p class="pricing-description">Tailored solutions for complex projects</p>
+                <ul class="pricing-features">
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited Pages</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom Backend</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>API Integration</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited Revisions</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority Support</li>
+                    <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom Timeline</li>
+                </ul>
+                <a href="#contact" class="btn btn-ghost btn-block">Contact Us</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+        <div class="section-header reveal">
+            <span class="section-badge">Testimonials</span>
+            <h2>What Clients Say</h2>
+            <p>Real feedback from satisfied customers</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <article class="testimonial-card glass reveal">
+                <div class="testimonial-rating">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p class="testimonial-text">"Fixed my iPhone screen in under an hour. Professional service and fair pricing. Highly recommend!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JD</div>
+                    <div class="author-info">
+                        <div class="author-name">John Davis</div>
+                        <div class="author-title">Small Business Owner</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial-card glass reveal">
+                <div class="testimonial-rating">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p class="testimonial-text">"The website they built for my business exceeded expectations. Modern design and works perfectly on all devices."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <div class="author-name">Sarah Martinez</div>
+                        <div class="author-title">Restaurant Owner</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial-card glass reveal">
+                <div class="testimonial-rating">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p class="testimonial-text">"Great branding work! The logo and visual identity perfectly captures what our startup is all about."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MR</div>
+                    <div class="author-info">
+                        <div class="author-name">Michael Rodriguez</div>
+                        <div class="author-title">Tech Founder</div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="section-header reveal">
+            <span class="section-badge">Get In Touch</span>
+            <h2>Let's Build Something Great</h2>
+            <p>Ready to start your project? We're here to help</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info reveal">
+                <div class="contact-methods">
+                    <div class="contact-method glass">
+                        <div class="method-icon">📧</div>
+                        <div class="method-content">
+                            <h4>Email</h4>
+                            <p>hello@techfix.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method glass">
+                        <div class="method-icon">📍</div>
+                        <div class="method-content">
+                            <h4>Location</h4>
+                            <p>Houston, Texas</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method glass">
+                        <div class="method-icon">⏰</div>
+                        <div class="method-content">
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 9AM - 7PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social glass">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7
