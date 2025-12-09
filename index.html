@@ -5,10 +5,352 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechFix Community | Tech Repair & Web Builds</title>
     <meta name="description" content="TechFix Community - device repair, web & app builds, and branding with an urban-tech aesthetic." />
+    <!-- Favicon: replace favicon.svg with your own logo/icon later -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="theme-dark">
-    <!-- content trimmed for brevity in this cell; full HTML is in your project zip -->
+    <header class="site-header" data-section="hero">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="#hero" class="brand">
+                    <div class="brand-mark">TF</div>
+                    <div class="brand-text">
+                        <span class="brand-title">TechFix Community</span>
+                        <span class="brand-sub">Repairs · Websites · Branding</span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#hero" data-nav-link="hero">Home</a></li>
+                    <li><a href="#services" data-nav-link="services">Services</a></li>
+                    <li><a href="#process" data-nav-link="process">Process</a></li>
+                    <li><a href="#portfolio" data-nav-link="portfolio">Work</a></li>
+                    <li><a href="#pricing" data-nav-link="pricing">Pricing</a></li>
+                    <li><a href="#faq" data-nav-link="faq">FAQ</a></li>
+                    <li><a href="#contact" data-nav-link="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Toggle light/dark theme">
+                    <span class="theme-icon moon">☾</span>
+                    <span class="theme-icon sun">☼</span>
+                </button>
+                <a href="#contact" class="btn nav-cta">Book now</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+
+        <section id="hero" class="hero section section-hero">
+            <div class="hero-main reveal">
+                <p class="hero-kicker">Houston-based · Mobile friendly · Small-business focused</p>
+                <h1>Keep your tech alive and your brand online.</h1>
+                <p class="hero-text">
+                    TechFix Community repairs your devices and builds clean, modern sites so you, your clients,
+                    and your business stay connected.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn primary">Schedule a repair / project</a>
+                    <a href="#portfolio" class="btn ghost">See sample work</a>
+                </div>
+                <div class="hero-meta">
+                    <span>Fast turnaround</span>
+                    <span>Web & device support</span>
+                    <span>Flexible pricing</span>
+                </div>
+            </div>
+            <div class="hero-side reveal">
+                <div class="hero-card primary">
+                    <div class="hero-device-mock">
+                        <div class="hero-device-status">
+                            <span class="dot"></span>
+                            Live repair queue
+                        </div>
+                        <div class="hero-device-body">
+                            <div class="hero-device-row">
+                                <span>Phone & tablet repairs</span>
+                                <span class="pill pill-good">In demand</span>
+                            </div>
+                            <div class="hero-device-row">
+                                <span>Website refresh</span>
+                                <span class="pill">Open slots</span>
+                            </div>
+                            <div class="hero-device-row">
+                                <span>Brand kit + logo</span>
+                                <span class="pill">Booking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="hero-card-foot">All in one: fix, design, and launch.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <p class="stat-label">Devices repaired</p>
+                        <p class="stat-value">100+ <span>and counting</span></p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Sites & UIs shipped</p>
+                        <p class="stat-value">10+ <span>projects</span></p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Average client type</p>
+                        <p class="stat-value">Solo & small business</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Services -->
+        <section id="services" class="section" data-section="services">
+            <div class="section-header reveal">
+                <h2>What I can help with</h2>
+                <p>Practical, hands-on support for your devices and your online presence.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card reveal">
+                    <h3>Device repair & cleanup</h3>
+                    <p>
+                        Phones, tablets, laptops, consoles. Screen replacements, battery swaps,
+                        diagnostics, and deep cleanup so things run like new.
+                    </p>
+                    <ul class="card-list">
+                        <li>Screen & battery replacement</li>
+                        <li>Storage cleanup & tune-ups</li>
+                        <li>Console maintenance</li>
+                    </ul>
+                </article>
+                <article class="card reveal">
+                    <h3>Websites & simple apps</h3>
+                    <p>
+                        Clean, fast sites that look good on any device. Perfect for small businesses,
+                        creators, and personal brands.
+                    </p>
+                    <ul class="card-list">
+                        <li>Landing pages & portfolios</li>
+                        <li>Small business websites</li>
+                        <li>Concept UIs / MVP screens</li>
+                    </ul>
+                </article>
+                <article class="card reveal">
+                    <h3>Branding & visuals</h3>
+                    <p>
+                        Logos, color palettes, and graphics that match your style so your brand
+                        feels consistent everywhere.
+                    </p>
+                    <ul class="card-list">
+                        <li>Logo & icon concepts</li>
+                        <li>Brand color & font guide</li>
+                        <li>Social media graphics</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section id="process" class="section section-alt" data-section="process">
+            <div class="section-header reveal">
+                <h2>How it works</h2>
+                <p>Simple steps whether you’re dropping off a device or starting a web project.</p>
+            </div>
+            <ol class="process-steps">
+                <li class="process-step reveal">
+                    <span class="step-label">1. Reach out</span>
+                    <p>Share what you need fixed or built using the contact form below.</p>
+                </li>
+                <li class="process-step reveal">
+                    <span class="step-label">2. Quick review</span>
+                    <p>We confirm the details, timeline, and pricing that fits your situation.</p>
+                </li>
+                <li class="process-step reveal">
+                    <span class="step-label">3. Repair / build</span>
+                    <p>Your device gets repaired or your site gets designed, tested, and tuned.</p>
+                </li>
+                <li class="process-step reveal">
+                    <span class="step-label">4. Handoff & support</span>
+                    <p>Pickup, launch, or handoff—plus tips and support so you’re not stuck.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="section" data-section="portfolio">
+            <div class="section-header reveal">
+                <h2>Sample layouts & concepts</h2>
+                <p>These are example structures and flows I can rebuild for your brand.</p>
+            </div>
+            <div class="portfolio-grid">
+                <article class="portfolio-item reveal">
+                    <div class="portfolio-thumb">
+                        <div class="img-placeholder">Service landing page</div>
+                    </div>
+                    <div class="portfolio-tag">Web layout</div>
+                    <h3>Small business home page</h3>
+                    <p>Hero, services, testimonials, and contact section on a single smooth scroll.</p>
+                </article>
+                <article class="portfolio-item reveal">
+                    <div class="portfolio-thumb">
+                        <div class="img-placeholder">Device check-in UI</div>
+                    </div>
+                    <div class="portfolio-tag">Repair flow</div>
+                    <h3>Repair status concept</h3>
+                    <p>A clean flow for customers to check repair status from their phone.</p>
+                </article>
+                <article class="portfolio-item reveal">
+                    <div class="portfolio-thumb">
+                        <div class="img-placeholder">Logo & brand kit</div>
+                    </div>
+                    <div class="portfolio-tag">Branding</div>
+                    <h3>Tech repair brand kit</h3>
+                    <p>Logo ideas, colors, and social graphics built around one consistent look.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="section section-alt" data-section="pricing">
+            <div class="section-header reveal">
+                <h2>Simple pricing snapshots</h2>
+                <p>Exact pricing depends on your device or project, but these are realistic starting points.</p>
+            </div>
+            <div class="pricing-grid">
+                <article class="pricing-card reveal">
+                    <h3>Device repair</h3>
+                    <p class="price-label">From</p>
+                    <p class="price-amount">$60</p>
+                    <ul class="pricing-list">
+                        <li>Screen & battery swaps</li>
+                        <li>Basic diagnostics</li>
+                        <li>Most phone & tablet repairs</li>
+                    </ul>
+                    <p class="pricing-note">Final price confirmed after a quick device check.</p>
+                </article>
+                <article class="pricing-card highlight reveal">
+                    <h3>Website starter</h3>
+                    <p class="price-label">From</p>
+                    <p class="price-amount">$250</p>
+                    <ul class="pricing-list">
+                        <li>1–3 page site</li>
+                        <li>Mobile-first design</li>
+                        <li>Basic contact form</li>
+                    </ul>
+                    <p class="pricing-note">Built for small businesses and creators.</p>
+                </article>
+                <article class="pricing-card reveal">
+                    <h3>Branding bundle</h3>
+                    <p class="price-label">From</p>
+                    <p class="price-amount">$180</p>
+                    <ul class="pricing-list">
+                        <li>Logo concepts</li>
+                        <li>Brand colors & fonts</li>
+                        <li>Social media posts</li>
+                    </ul>
+                    <p class="pricing-note">A starter kit you can grow with.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section" data-section="faq">
+            <div class="section-header reveal">
+                <h2>Questions people usually ask</h2>
+                <p>If you don’t see your question here, just send it through the form.</p>
+            </div>
+            <div class="faq-grid">
+                <article class="faq-item reveal">
+                    <h3>Do I have to know exactly what’s wrong?</h3>
+                    <p>No. Describe what’s happening and I’ll suggest next steps or a quick diagnostic.</p>
+                </article>
+                <article class="faq-item reveal">
+                    <h3>Can you work with my existing website?</h3>
+                    <p>Yes. I can clean up design, fix layout issues, or rebuild it into something cleaner.</p>
+                </article>
+                <article class="faq-item reveal">
+                    <h3>What areas do you serve?</h3>
+                    <p>Primarily local to Houston, with website work available remotely.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-contact" data-section="contact">
+            <div class="section-header reveal">
+                <h2>Tell me what you need</h2>
+                <p>Fill this out once. I’ll reply with a clear next step—no spam, no pressure.</p>
+            </div>
+            <div class="contact-layout">
+                <form class="contact-form reveal" onsubmit="return false;">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Your name" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="you@example.com" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="service">What do you need?</label>
+                            <select id="service">
+                                <option value="repair">Device repair</option>
+                                <option value="website">Website / app build</option>
+                                <option value="branding">Branding / logo</option>
+                                <option value="other">Something else</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="budget">Budget (optional)</label>
+                            <input id="budget" type="text" placeholder="$100 - $500" />
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="details">Project details</label>
+                        <textarea id="details" rows="4" placeholder="Tell me what’s going on with your device or what you want built..."></textarea>
+                    </div>
+                    <button class="btn primary full-width" type="submit" id="contact-submit">
+                        Copy info & open email
+                    </button>
+                    <p class="form-note">
+                        This will copy your message and open your email app addressed to me. Later this can be upgraded
+                        to a full form backend (Formspree, EmailJS, etc.).
+                    </p>
+                </form>
+                <aside class="contact-info reveal">
+                    <h3>Direct contact</h3>
+                    <p>Prefer to reach out manually?</p>
+                    <ul>
+                        <li><strong>Email:</strong> yourname@example.com</li>
+                        <li><strong>City:</strong> Houston, TX (update this if needed)</li>
+                    </ul>
+                    <p class="contact-tip">
+                        You can add WhatsApp, Instagram, or other links here once you’re ready.
+                    </p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <p>&copy; <span id="year"></span> TechFix Community. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to top</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
